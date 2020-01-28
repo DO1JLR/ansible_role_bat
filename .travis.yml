@@ -38,8 +38,8 @@ matrix:
 # Require the standard build environment
 sudo: required
 
-# Require Ubuntu 14.04
-dist: trusty
+# try with Ubuntu 18.04
+dist: bionic
 
 # Require Docker
 services:
