@@ -1,0 +1,21 @@
+---
+- name: download bat [amd64]
+  get_url:
+    url: '{{ bat_redis_url_amd64 }}'
+    checksum: 'sha256:{{ bat_redis_amd64_sha256sum }}'
+    dest: '{{ bat_download_dir }}/{{ bat_redis_amd64_filename }}'
+    force: no
+    mode: 'u=rw,go=r'
+  when:
+    - ansible_architecture == "x86_64"
+    - ansible_userspace_bits == '64'
+    - ansible_os_family == "Debian"
+
+- name: install bat [amd64]
+  become: yes
+  apt:
+    deb: '{{ bat_download_dir }}/{{ bat_redis_amd64_filename }}'
+  when:
+    - ansible_architecture == "x86_64"
+    - ansible_userspace_bits == '64'
+    - ansible_os_family == "Debian"

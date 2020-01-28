@@ -1,0 +1,10 @@
+---
+
+- name: print ansible_architecture
+  debug:
+    msg: "ansible_architecture == \"{{ ansible_architecture }}\""
+
+- name: print ansible_architecture
+  debug:
+    msg: "ansible_architecture[:3] == \"{{ ansible_architecture[:3] }}\""
+  when: ansible_architecture[:3] == "arm"

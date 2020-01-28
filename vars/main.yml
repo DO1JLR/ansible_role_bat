@@ -2,8 +2,16 @@
 # Mirror to download the bat from
 bat_mirror: 'https://github.com/sharkdp/bat/releases/download/v{{ bat_version }}'
 
-# File name of the bat redistributable package
-bat_redis_filename: 'bat_{{ bat_version }}_amd64.deb'
+# File name of the bat redistributable package (amd64)
+bat_redis_amd64_filename: 'bat_{{ bat_version }}_amd64.deb'
+
+# File name of the bat redistributable package (arm64)
+bat_redis_arm64_filename: 'bat_{{ bat_version }}_arm64.deb'
+
+# File name of the bat redistributable package (armhf)
+bat_redis_armhf_filename: 'bat_{{ bat_version }}_armhf.deb'
 
 # URL of the bat redistributable package
-bat_redis_url: '{{ bat_mirror }}/{{ bat_redis_filename }}'
+bat_redis_url_amd64: '{{ bat_mirror }}/{{ bat_redis_amd64_filename }}'
+bat_redis_url_arm64: '{{ bat_mirror }}/{{ bat_redis_arm64_filename }}'
+bat_redis_url_armhf: '{{ bat_mirror }}/{{ bat_redis_armhf_filename }}'
