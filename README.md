@@ -1,9 +1,9 @@
-Ansible Role: bat
-=================
-
 [![Build Status](https://travis-ci.com/gantsign/ansible_role_bat.svg?branch=master)](https://travis-ci.com/gantsign/ansible_role_bat)
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.bat-blue.svg)](https://galaxy.ansible.com/gantsign/bat)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible_role_bat/master/LICENSE)
+[![MIT License](https://raw.githubusercontent.com/do1jlr/ansible_role_bat/master/.github/license.svg?sanitize=true)](https://github.com/do1jlr/ansible_role_bat/blob/master/LICENSE)
+
+Ansible Role: bat
+=================
 
 Role to download and install [bat](https://github.com/sharkdp/bat) the
 advanced alternative to `cat`.
