@@ -24,4 +24,3 @@
     - ansible_architecture[:3] == "arm"
     - ansible_userspace_bits == '32'
     - ansible_os_family == "Debian"
-
